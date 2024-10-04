@@ -153,6 +153,9 @@ hr{
   cursor: pointer;
   border-radius: 50%;
 }
+.profile-box img{
+  border-radius: 50%;
+}
 .sidebar{
   grid-area: sidebar;
   background-color: #212121;
