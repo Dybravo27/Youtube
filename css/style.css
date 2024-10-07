@@ -6,7 +6,22 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
-
+:root{
+  --blanco:#fff;
+  --gris_claro:#aaaa;
+  --gris_semitransparente:rgba(255,255 ,255 ,0.2);
+  --gris_oscuro_claro:#717171;
+  --negro_carbon:#202020;
+  --negro_ebano:#121212;
+  --blanco_humo:#f2f2f2;
+  --gris_pizarra:#313131;
+  --gris_acero:#4a4a4a;
+  --gris_sombra:#212121;
+  --negro_profundo:#181818;
+  --gris_slate:#373737;
+  --gris_perla:#d4d4d4;
+  --gris_neutro:#aaa;
+}
 /*
 Layout
 */
@@ -38,7 +53,7 @@ p{
 a{
   text-decoration: none;
   font-size: 0.9rem;
-  color: #fff;
+  color: var(--blanco);
 }
 h1{
   font-size: 1.5rem;
@@ -46,12 +61,12 @@ h1{
 h4{
   font-size: 0.9rem;
   text-transform: uppercase;
-  color: #aaaa;
+  color: var(--gris_claro);
   margin-left: 10px;
 }
 hr{
   margin: 12px 0;
-  border: solid 1px rgba(255,255 ,255 ,0.1);
+  border: solid 1px var(--gris_semitransparente);
 }
 ::-webkit-scrollbar{
   width: 8px;
@@ -61,14 +76,14 @@ hr{
   border-radius: 5px;
 }
 .sidebar::-webkit-scrollbar-thumb{
-  background-color: #717171;
+  background-color: var(--gris_oscuro_claro);
 }
 .header{
   grid-area: header;
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #202020;
+  background-color: var(--negro_carbon);
   width: 100%;
   height: 56px;
   justify-content: space-between;
@@ -90,7 +105,7 @@ hr{
   position: relative;
 }
 .logo h1{
-  color: #fff;
+  color: var(--blanco);
   letter-spacing: -1px;
 }
 
@@ -113,11 +128,11 @@ hr{
 .search-container input{
   height: 40px;
   width: 100%;
-  background-color: #12121212;
-  color: #f2f2f2;
+  background-color: var(--negro_ebano);
+  color: var(--blanco_humo);
   padding: 12px;
   outline: none;
-  border: 1px solid rgba(255, 255, 255,0.1);
+  border: 1px solid var(--gris_semitransparente);
   border-radius: 10px 0px 0px 10px;
 }
 .search-container button{
@@ -125,8 +140,8 @@ hr{
   min-width: 40px;
   height: 40px;
   font-size: 1.2rem;
-  background-color: #313131;
-  color: #fff;
+  background-color: var(--gris_pizarra);
+  color: var(--blanco);
   outline: none;
   border-radius: 0px 10px 10px 0px;
   cursor: pointer;
@@ -144,7 +159,7 @@ hr{
   width: 40px;
   min-width: 40px;
   height: 40px;
-  color: #fff;
+  color: var(--blanco);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -154,7 +169,7 @@ hr{
   transition: 0.8s;
 }
 .profile-container a:hover{
-  background-color: #313131;
+  background-color: var(--gris_acero);
 }
 
 .profile-box{
@@ -169,7 +184,7 @@ hr{
 }
 .sidebar{
   grid-area: sidebar;
-  background-color: #212121;
+  background-color: var(--gris_sombra);
   padding-top: 10px;
   overflow-y: scroll;
 }
@@ -190,7 +205,7 @@ hr{
   margin-right: 24px;
 }
 .sidebar-item:hover{
-  background-color: #313131;
+  background-color: var(--gris_acero);
 }
 .content{
   grid-area: content;
@@ -198,30 +213,30 @@ hr{
 .chips-wrapper{
   max-width: calc(100vw - 240px);
   overflow-x: scroll;
-  background-color: #181818;
+  background-color: var(--negro_profundo);
   display: flex;
   padding-left: 14px;
-  border-top: 1px solid rgba(255, 255, 255,0.1);
-  border-bottom: 1px solid rgba(255, 255, 255,0.1);
+  border-top: 1px solid var(--gris_semitransparente);
+  border-bottom: 1px solid var(--gris_semitransparente);
 }
 .chips{
   margin: 12px 6px;
-  background-color: #373737;
+  background-color: var(--gris_slate);
   padding: 6px 12px;
-  color: #fff;
+  color: var(--blanco);
   cursor: pointer;
   border-radius: 15px;
   white-space: nowrap;
   transition: 0.5s;
 }
 .chips:hover{
-  background-color: #d4d4d4;
+  background-color: var(--gris_perla);
 }
 .chips-wrapper::-webkit-scrollbar{
   height: 6px;
 }
 .chips-wrapper:hover::-webkit-scrollbar-thumb{
-  background-color: #717171;
+  background-color: var(--gris_oscuro_claro);
 }
 
 .video-container{
@@ -232,7 +247,7 @@ hr{
   height: calc(100vh - 118px);
   gap: 18px;
   padding: 20px;
-  background-color: #181818;
+  background-color: var(--negro_profundo);
   overflow-y: scroll;
   align-content: start;
 }
@@ -251,7 +266,7 @@ hr{
   transition: 1s;
 }
 .video-content:hover{
-  background-color: #373737;
+  background-color: var(--gris_slate);
 }
 .video-box{
   position: relative;
@@ -265,7 +280,7 @@ hr{
 }
 .video-detail{
   display: flex;
-  color: #fff;
+  color: var(--blanco);
   padding: 12px;
 }
 .chanel-logo{
@@ -285,12 +300,12 @@ hr{
 .chanel-name{
   font-size: 0.8rem;
   margin-top: 10px;
-  color: #aaa;
+  color: var(--gris_neutro);
 }
 .view-upload{
   display: flex;
   gap: 5px;
-  color: #aaa;
+  color: var(--gris_neutro);
   font-size: 0.8rem;
   margin-top: 4px;
 }
