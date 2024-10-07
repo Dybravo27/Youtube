@@ -76,6 +76,7 @@ hr{
   display: flex;
   padding-left: 16px;
   padding-right: 16px;
+  gap: 6px;
 }
 .logo-container{
   display: flex;
@@ -292,4 +293,26 @@ hr{
   color: #aaa;
   font-size: 0.8rem;
   margin-top: 4px;
+}
+@media (max-width:1200px){
+  body{
+    grid-template-columns: 70px 1fr;
+  }
+  .sidebar-items span, .sidebar-items h4{
+    display: none;
+  }
+  .sidebar-items{
+    padding: 0;
+  }
+  .sidebar-item{
+    padding: 0 20px;
+  }
+  .chips-wrapper{
+    max-width: calc(100vw - 70px);
+  }
+}
+@media (max-width:800px){
+  .search-container{
+    display: none;
+  }
 }
