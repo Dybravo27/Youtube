@@ -1,0 +1,42 @@
+/* barra lateral de youtube */
+.sidebar{
+  grid-area: sidebar;
+  background-color: var(--gris_sombra);
+  padding-top: 10px;
+  overflow-y: scroll;
+}
+.side-menu{
+  display: flex;
+  flex-direction: column;
+  padding: 0 14px;
+}
+.side-menu__item{
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  border-radius: 10px;
+  transition: 0.5s;
+  text-decoration: none;
+  color: var(--blanco);
+}
+.side-menu__text{
+    font-size: 0.9rem;
+}
+.side-menu__title{
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: var(--gris_claro);
+  margin-left: 10px;
+}
+.side-menu__icono{
+  margin-right: 24px;
+  font-size: 1.5rem;
+}
+.side-menu__item:hover{
+  background-color: var(--gris_acero);
+}
+.side-menu__linea-separador{
+  margin: 12px 0;
+  border: solid 1px var(--gris_semitransparente);
+}
