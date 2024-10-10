@@ -1,37 +1,6 @@
 .content{
   grid-area: content;
 }
-.chips-wrapper{
-  max-width: calc(100vw - 240px);
-  overflow-x: scroll;
-  background-color: var(--negro_profundo);
-  display: flex;
-  padding-left: 14px;
-  border-top: 1px solid var(--gris_semitransparente);
-  border-bottom: 1px solid var(--gris_semitransparente);
-}
-.chips-wrapper__chips{
-  margin: 12px 6px;
-  background-color: var(--gris_slate);
-  padding: 6px 12px;
-  color: var(--blanco);
-  cursor: pointer;
-  border-radius: 15px;
-  white-space: nowrap;
-  transition: 0.5s;
-}
-.chips-wrapper__chips-texto{
-  font-size: 0.9rem;
-}
-.chips-wrapper__chips:hover{
-  background-color: var(--gris_perla);
-}
-.chips-wrapper::-webkit-scrollbar{
-  height: 6px;
-}
-.chips-wrapper:hover::-webkit-scrollbar-thumb{
-  background-color: var(--gris_oscuro_claro);
-}
 /* contenido videos */
 .container{
   display: grid;

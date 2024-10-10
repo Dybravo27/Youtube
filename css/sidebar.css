@@ -1,4 +1,7 @@
 /* barra lateral de youtube */
+.sidebar::-webkit-scrollbar-thumb{
+    background-color: var(--gris_oscuro_claro);
+}
 .sidebar{
   grid-area: sidebar;
   background-color: var(--gris_sombra);
